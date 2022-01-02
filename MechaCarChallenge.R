@@ -12,12 +12,7 @@ lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(Me
 #Deliverable 3
 t.test(suspension_table$PSI,mu=1500) #t-test across all Lots against population
 
-#subset each lot separately
-lot1 <- subset(suspension_table, Manufacturing_Lot=="Lot1")
-lot2 <- subset(suspension_table, Manufacturing_Lot=="Lot2")
-lot3 <- subset(suspension_table, Manufacturing_Lot=="Lot3")
-
-#t-test each lot against population
-t.test(lot1$PSI,mu=1500)
-t.test(lot2$PSI,mu=1500)
-t.test(lot3$PSI,mu=1500)
+#t-test for each lot with subset argument
+t.test(subset(suspension_table$PSI, suspension_table$Manufacturing_Lot=="Lot1"),mu=1500)
+t.test(subset(suspension_table$PSI, suspension_table$Manufacturing_Lot=="Lot2"),mu=1500)
+t.test(subset(suspension_table$PSI, suspension_table$Manufacturing_Lot=="Lot3"),mu=1500)
