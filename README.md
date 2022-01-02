@@ -16,4 +16,13 @@ Based on the Total Summary statistics, the variance of the overall suspension co
 
 Based on the Lot Summary statistics, Lots 1 and 2 meet the design specification, but Lot 3 has a variance of 170.3 which exceeded the 100 PSI specification. Lots 1 and 2 also appear to be manufactured more uniformly with mean and median being the same barring the 0.2 difference between mean and median for Lot 2.
 The standard deviation of Lots 1 and 2 are also much smaller than Lot 3, indicating that most of the suspension coils in Lots 1 and 2 have a PSI closer to 1500 than the coils in Lot 3.
+
+## T-Tests on Suspension Coils
+![T-Test_All_Lots](https://github.com/hwaijiinlee/MechaCar_Statistical_Analysis/blob/main/Resources/T-Test_All_Lots.png)
+
+Based on the T-Test across all lots, the p-value of 0.06 is slightly higher than the presumed significance level of 0.05 which means that there is insufficient evidence to reject the null hypothesis i.e. the mean PSI across the lots are statistically similar to the population's mean PSI.
+
+![T-Test_Each_Lot](https://github.com/hwaijiinlee/MechaCar_Statistical_Analysis/blob/main/Resources/T-Test_Each_Lot.png)
+
+Based on the T-Test for each Manufacturing Lot, only Lot 3's p-value is smaller than the significance level of 0.05. This means that Lot 3's mean PSI is statistically different from the population's mean PSI.
  
