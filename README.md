@@ -25,4 +25,12 @@ Based on the T-Test across all lots, the p-value of 0.06 is slightly higher than
 ![T-Test_Each_Lot](https://github.com/hwaijiinlee/MechaCar_Statistical_Analysis/blob/main/Resources/T-Test_Each_Lot.png)
 
 Based on the T-Test for each Manufacturing Lot, only Lot 3's p-value is smaller than the significance level of 0.05. This means that Lot 3's mean PSI is statistically different from the population's mean PSI.
+
+## Study Design: MechaCar vs Competition
+1) Consumers are usually interested in mpg and safety rating of cars, so we will be testing these two metrics for now.
+2) The null hypothesis is that the mean of MechaCar's mpg and safety rating is equal to the competition's. The alternative hypothesis is that the mean of MechaCar's mpg and safety rating is not equal to the competition's mean mpg and safety rating.
+3) We can perform a One-Sample t-Test comparing the mean of MechaCar's mpg and safety rating to the competition's mean mpg and safety rating. If we can prove that the alternative hypothesis is true i.e. MechaCar's mpg and safety rating is statistically superior to their competition's, we can conclude that MechaCar makes safer and more environmentally friendly cars than their competition.
+4) We would need the mpg and safety rating of all of MechaCar's and their competition's vehicles in say the last 5 years. We can narrow down the population to a few of their fiercest competitors to see if MechaCar does produce better vehicles.
+
+
  
